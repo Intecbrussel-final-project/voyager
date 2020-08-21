@@ -41,7 +41,7 @@ function Api() {
     const url =
       apiurl +
       state.inputvalue +
-      "+point+of+interest&language=en&key=AIzaSyB8kH-dCmOLBeq4sfWgMM-R0wBulTD9_4s";
+      "+point+of+interest&language=en&key={process.env.REACT_APP_API_KEY}";
     axios
       .get(url)
       .then((response) => response)
